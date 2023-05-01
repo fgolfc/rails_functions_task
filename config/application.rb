@@ -9,6 +9,7 @@ Bundler.require(*Rails.groups)
 module RailsFunctionsTaskApp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
+    config.active_job.queue_adapter = :sidekiq
     config.load_defaults 6.0
     config.generators do |g|
       g.test_framework :rspec,

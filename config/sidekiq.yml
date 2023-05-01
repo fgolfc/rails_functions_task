@@ -1,0 +1,14 @@
+---
+:concurrency: 5
+:queues:
+  - default
+  - async_log
+  - mailers
+
+production:
+  :redis:
+    :url: redis://redis:6379/0
+
+development:
+  :redis:
+    :url: redis://redis:6379/0

@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+ .no-image-rectangle {
+  display: inline-block;
+  width: 500px;
+  height: 600px;
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+}
